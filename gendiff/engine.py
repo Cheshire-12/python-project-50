@@ -1,6 +1,7 @@
 import json
 import os
 
+
 def stringify(value):
     if isinstance(value, bool):
         return str(value).lower()
@@ -12,8 +13,9 @@ def stringify(value):
 def generate_diff(file_path1, file_path2, format='stylish') -> str:
     path1 = os.path.abspath(file_path1)
     path2 = os.path.abspath(file_path2)
-    data1 = json.load(open(path1))
-    data2 = json.load(open(path2))
+    with open(path1) as f1, open(path2) as f2:
+        data1 = json.load(f1)
+        data2 = json.load(f2)
     
     keys = sorted(set(data1.keys()) | set(data2.keys()))
     diff = []
