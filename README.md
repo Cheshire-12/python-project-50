@@ -1,5 +1,12 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Cheshire-12/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Cheshire-12/python-project-50/actions)
 
 ## Asciinema
 [![asciicast](https://asciinema.org/a/v3P9K7xo1NBwkCe3.svg)](https://asciinema.org/a/v3P9K7xo1NBwkCe3)
+
+## 📊 Project Status
+| Tool | Status |
+| :--- | :--- |
+| **Hexlet Tests** | [![Actions Status](https://github.com/Cheshire-12/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Cheshire-12/python-project-50/actions) |
+| **SonarCloud Quality Gate** |  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Cheshire-12_python-project-50&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Cheshire-12_python-project-50) |
+| **Coverage** | [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Cheshire-12_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Cheshire-12_python-project-50) |
+| **Lines of code** | [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Cheshire-12_python-project-50&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Cheshire-12_python-project-50) |
