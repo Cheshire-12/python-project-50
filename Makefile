@@ -1,11 +1,11 @@
-make lint:
+lint:
 	uv run ruff check
 
-make install:
+install:
 	uv sync
 
-make test:
+test:
 	uv run pytest
 
-make coverage:
+coverage:
 	uv run pytest --cov --cov-report=xml
