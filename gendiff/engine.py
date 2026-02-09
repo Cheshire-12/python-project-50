@@ -1,5 +1,6 @@
-import json
 import os
+
+from gendiff.loader import load_file
 
 
 def stringify(value):
@@ -13,9 +14,9 @@ def stringify(value):
 def generate_diff(file_path1, file_path2, format='stylish') -> str:
     path1 = os.path.abspath(file_path1)
     path2 = os.path.abspath(file_path2)
-    with open(path1) as f1, open(path2) as f2:
-        data1 = json.load(f1)
-        data2 = json.load(f2)
+    
+    data1 = load_file(path1)
+    data2 = load_file(path2)
     
     keys = sorted(set(data1.keys()) | set(data2.keys()))
     diff = []

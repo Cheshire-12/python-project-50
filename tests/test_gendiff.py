@@ -11,7 +11,18 @@ def get_fixture_path(file_name):
 def test_generate_diff_json():
     file1 = get_fixture_path('file1.json')
     file2 = get_fixture_path('file2.json')
-    expected_output = get_fixture_path('result_stylish.txt')
+    expected_output = get_fixture_path('res_stylish.txt')
+
+    with open(expected_output) as f:
+        expected = f.read().strip()
+
+    assert generate_diff(file1, file2) == expected
+    
+
+def test_generate_diff_yaml():
+    file1 = get_fixture_path('file1.yaml')
+    file2 = get_fixture_path('file2.yaml')
+    expected_output = get_fixture_path('res_stylish.txt')
 
     with open(expected_output) as f:
         expected = f.read().strip()
