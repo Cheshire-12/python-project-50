@@ -13,6 +13,7 @@ def stringify(value, depth):
     result = "\n".join(lines)
     return f"{{\n{result}\n{indent}}}"
 
+
 def format_stylish(diff_tree, depth=1):
     indent = ' ' * ((depth - 1) * 4)
     lines = []

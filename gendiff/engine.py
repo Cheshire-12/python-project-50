@@ -1,8 +1,9 @@
 import os
 
-from gendiff.loader import load_file
 from gendiff.formatters.stylish import format_stylish
+from gendiff.loader import load_file
 from gendiff.tree import build_diff_tree
+
 
 def stringify(value):
     if isinstance(value, bool):
