@@ -28,3 +28,13 @@ def test_generate_diff_yaml():
         expected = f.read().strip()
 
     assert generate_diff(file1, file2) == expected
+    
+def test_generate_diff_nested():
+    file1 = get_fixture_path('file1_nested.json')
+    file2 = get_fixture_path('file2_nested.json')
+    expected_output = get_fixture_path('res_nested_stylish.txt')
+
+    with open(expected_output) as f:
+        expected = f.read().strip()
+
+    assert generate_diff(file1, file2) == expected

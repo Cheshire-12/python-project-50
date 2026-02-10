@@ -5,7 +5,7 @@ import yaml
 
 
 def load_file(file_path):
-    name, extension = os.path.splitext(file_path)
+    _, extension = os.path.splitext(file_path)
     with open(file_path) as file:
         if extension in '.json':
             return json.load(file)

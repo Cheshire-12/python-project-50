@@ -1,7 +1,8 @@
 import os
 
 from gendiff.loader import load_file
-
+from gendiff.formatters.stylish import format_stylish
+from gendiff.tree import build_diff_tree
 
 def stringify(value):
     if isinstance(value, bool):
@@ -17,18 +18,8 @@ def generate_diff(file_path1, file_path2, format='stylish') -> str:
     
     data1 = load_file(path1)
     data2 = load_file(path2)
+    diff_tree = build_diff_tree(data1, data2)
     
-    keys = sorted(set(data1.keys()) | set(data2.keys()))
-    diff = []
-    for key in keys:
-        if key in data1 and key in data2:
-            if data1[key] == data2[key]:
-                diff.append(f"    {key}: {stringify(data1[key])}")
-            else:
-                diff.append(f"  - {key}: {stringify(data1[key])}")
-                diff.append(f"  + {key}: {stringify(data2[key])}")
-        elif key in data1:
-            diff.append(f"  - {key}: {stringify(data1[key])}")
-        else:
-            diff.append(f"  + {key}: {stringify(data2[key])}")
-    return "{\n" + "\n".join(diff) + "\n}"
+    if format == 'stylish':
+        return format_stylish(diff_tree)
+    raise ValueError(f"Unknown format: {format}")
