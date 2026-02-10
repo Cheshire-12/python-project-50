@@ -5,6 +5,8 @@
 [![asciicast](https://asciinema.org/a/v3P9K7xo1NBwkCe3.svg)](https://asciinema.org/a/v3P9K7xo1NBwkCe3)
 **YAML file**
 [![asciicast](https://asciinema.org/a/vt09nTXkXAfB4PI5.svg)](https://asciinema.org/a/vt09nTXkXAfB4PI5)
+**Nested file**
+[![asciicast](https://asciinema.org/a/tsCHqV91lXR49R9T.svg)](https://asciinema.org/a/tsCHqV91lXR49R9T)
 
 ## 📊 Project Status
 | Tool | Status |
