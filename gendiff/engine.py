@@ -1,6 +1,7 @@
 import os
 
 from gendiff.formatters.stylish import format_stylish
+from gendiff.formatters.plain import format_plain
 from gendiff.loader import load_file
 from gendiff.tree import build_diff_tree
 
@@ -23,4 +24,7 @@ def generate_diff(file_path1, file_path2, format='stylish') -> str:
     
     if format == 'stylish':
         return format_stylish(diff_tree)
+
+    if format == 'plain':
+        return format_plain(diff_tree)
     raise ValueError(f"Unknown format: {format}")
