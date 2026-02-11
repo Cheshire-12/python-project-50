@@ -6,14 +6,6 @@ from gendiff.loader import load_file
 from gendiff.tree import build_diff_tree
 
 
-def stringify(value):
-    if isinstance(value, bool):
-        return str(value).lower()
-    elif value is None:
-        return 'null'
-    return str(value)
-        
-
 def generate_diff(file_path1, file_path2, format='stylish') -> str:
     path1 = os.path.abspath(file_path1)
     path2 = os.path.abspath(file_path2)
