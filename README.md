@@ -36,7 +36,7 @@ make setup
 ```
 **Important**: After running this command, all executable scripts (`gendiff`) become available directly in your terminal without needing the `uv run` prefix.
 ### 2. Running the utility
-You can start any game by typing its corresponding command.
+Once installed, the `gendiff` command will be available in your terminal.
 ```bash
 gendiff [options] <first_file> <second_file>
 ```
