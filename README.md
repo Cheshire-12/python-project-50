@@ -7,6 +7,10 @@
 [![asciicast](https://asciinema.org/a/vt09nTXkXAfB4PI5.svg)](https://asciinema.org/a/vt09nTXkXAfB4PI5)
 **Nested file**
 [![asciicast](https://asciinema.org/a/tsCHqV91lXR49R9T.svg)](https://asciinema.org/a/tsCHqV91lXR49R9T)
+**Plain format**
+[![asciicast](https://asciinema.org/a/nFYMJFaTF5NfWmUg.svg)](https://asciinema.org/a/nFYMJFaTF5NfWmUg)
+**Output to JSON**
+[![asciicast](https://asciinema.org/a/lNAod8s0VRKKb76b.svg)](https://asciinema.org/a/lNAod8s0VRKKb76b)
 
 ## 📊 Project Status
 | Tool | Status |

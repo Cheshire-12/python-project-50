@@ -50,3 +50,14 @@ def test_generate_diff_plain():
         expected = f.read().strip()
 
     assert generate_diff(file1, file2, format='plain') == expected
+    
+
+def test_generate_diff_to_json():
+    file1 = get_fixture_path('file1_nested.json')
+    file2 = get_fixture_path('file2_nested.json')
+    expected_output = get_fixture_path('res_nested_json.txt')
+    
+    with open(expected_output) as f:
+        expected = f.read().strip()
+        
+    assert generate_diff(file1, file2, format='json') == expected
